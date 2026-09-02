@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Style Wok Sushi — Food truck asiatique · Le Séquestre</title>
+<title>Style Wok Sushi — Cuisine japonaise & chinoise · Le Séquestre</title>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 :root {
@@ -334,7 +334,7 @@ footer{background:var(--dark);padding:2.6rem 3rem;display:flex;align-items:cente
     <span class="l2">Wok</span>
   </h1>
   <div class="hero-rule"></div>
-  <p class="hero-desc">Food truck de cuisine japonaise & vietnamienne. Sushis frais préparés à la main, woks parfumés, nems croustillants et fondue asiatique — tous nos plats sont faits maison.</p>
+  <p class="hero-desc">Food truck de cuisine japonaise & chinoise. Sushis frais préparés à la main, woks parfumés, nems croustillants et fondue asiatique — tous nos plats sont faits maison.</p>
   <div class="hero-ctas">
     <a href="https://deliveroo.fr/fr/menu/Albi/le-sequestre/style-wok-81" target="_blank" class="btn-p">Commander sur Deliveroo</a>
     <a href="https://www.ubereats.com/fr/store/style-wok/wKtE3caxSnGZHk9qJ-TykQ" target="_blank" class="btn-s">Uber Eats</a>
@@ -462,7 +462,8 @@ footer{background:var(--dark);padding:2.6rem 3rem;display:flex;align-items:cente
   <div class="tabs">
     <button class="tab active" onclick="switchTab(this,'plateaux')">Plateaux</button>
     <button class="tab" onclick="switchTab(this,'alacarte')">À la carte</button>
-    <button class="tab" onclick="switchTab(this,'menusv')">Menus vietnamiens</button>
+    <button class="tab" onclick="switchTab(this,'menusv')">Menus</button>
+    <button class="tab" onclick="switchTab(this,'poke')">Poke Bowl</button>
     <button class="tab" onclick="switchTab(this,'entrees')">Entrées</button>
     <button class="tab" onclick="switchTab(this,'plats')">Plats chauds</button>
     <button class="tab" onclick="switchTab(this,'boissons')">Boissons</button>
@@ -526,11 +527,6 @@ footer{background:var(--dark);padding:2.6rem 3rem;display:flex;align-items:cente
       <div class="cc"><div class="cc-ref">SP1</div><div class="cc-row"><span class="cc-name">Saumon avocat concombre menthe</span><span class="cc-price">7€</span></div></div>
       <div class="cc"><div class="cc-ref">SP2</div><div class="cc-row"><span class="cc-name">Fromage avocat concombre menthe</span><span class="cc-price">7€</span></div></div>
     </div>
-    <div class="cs-title">Poke Bowl</div>
-    <div class="cg">
-      <div class="cc"><div class="cc-ref">Taille M</div><div class="cc-row"><span class="cc-name">Betterave, radis, tomate, concombre, avocat<br><small style="color:var(--ink-faint);font-size:.72rem;">+ saumon, bœuf, poulet ou crevettes</small></span><span class="cc-price">13€</span></div></div>
-      <div class="cc"><div class="cc-ref">Taille L</div><div class="cc-row"><span class="cc-name">Betterave, radis, tomate, concombre, avocat<br><small style="color:var(--ink-faint);font-size:.72rem;">+ saumon, bœuf, poulet ou crevettes</small></span><span class="cc-price">15€</span></div></div>
-    </div>
   </div>
 
   <div id="menusv" class="panel">
@@ -539,6 +535,14 @@ footer{background:var(--dark);padding:2.6rem 3rem;display:flex;align-items:cente
       <div class="mv"><div class="mv-name">Menu B</div><div class="mv-price">12,50€</div><ul><li>Nems au Porc (3 pièces)</li><li>Nouilles sautées (Bœuf, Poulet ou Crevettes)</li></ul></div>
       <div class="mv"><div class="mv-name">Menu C</div><div class="mv-price">12,50€</div><ul><li>Samoussas Bœuf (3 pièces)</li><li>Nouilles sautées (Bœuf, Poulet ou Crevettes)</li></ul></div>
       <div class="mv"><div class="mv-name">Menu D</div><div class="mv-price">12,50€</div><ul><li>Salade Nems</li><li>Nouilles sautées (Bœuf, Poulet ou Crevettes)</li></ul></div>
+    </div>
+  </div>
+
+  <div id="poke" class="panel">
+    <div class="mv-grid">
+      <div class="mv"><div class="mv-name">Poke Bowl — Taille M</div><div class="mv-price">13€</div><ul><li>Betterave, radis, tomate, concombre, avocat</li><li>Au choix : saumon, bœuf, poulet ou crevettes</li><li>Servi sur lit de riz vinaigré</li></ul></div>
+      <div class="mv"><div class="mv-name">Poke Bowl — Taille L</div><div class="mv-price">15€</div><ul><li>Betterave, radis, tomate, concombre, avocat</li><li>Au choix : saumon, bœuf, poulet ou crevettes</li><li>Portion généreuse sur lit de riz vinaigré</li></ul></div>
+      <div class="mv"><div class="mv-name">Chirashi — BOL</div><div class="mv-price">13€</div><ul><li>Chirashi saumon avocat</li><li>Bol traditionnel japonais sur riz vinaigré</li></ul></div>
     </div>
   </div>
 
@@ -629,7 +633,7 @@ footer{background:var(--dark);padding:2.6rem 3rem;display:flex;align-items:cente
     <div>
       <div class="kicker">Savoir-faire</div>
       <h2 class="title">Nos spécialités</h2>
-      <p class="desc" style="margin-bottom:1.4rem;">Entre tradition japonaise et saveurs vietnamiennes, Style Wok propose une cuisine fusion authentique préparée chaque jour avec des produits frais.</p>
+      <p class="desc" style="margin-bottom:1.4rem;">Entre tradition japonaise et saveurs chinoises, Style Wok propose une cuisine fusion authentique préparée chaque jour avec des produits frais.</p>
       <p class="desc">Chaque pièce de sushi est assemblée à la main, le riz vinaigré préparé selon la tradition. Les woks sont cuisinés à haute température pour préserver le croquant et les arômes.</p>
     </div>
     <div class="spec-grid">
@@ -695,7 +699,7 @@ footer{background:var(--dark);padding:2.6rem 3rem;display:flex;align-items:cente
 
 <footer>
   <div class="f-logo">Style <span>Wok</span></div>
-  <div class="f-mid">Style Wok Sushi · Place Jules Ferry, 81990 Le Séquestre<br>Cuisine vietnamienne & japonaise · Tous nos plats sont faits maison · Tél : <a href="tel:0785491478" style="color:var(--star);text-decoration:none;font-weight:700;">07 85 49 14 78</a></div>
+  <div class="f-mid">Style Wok Sushi · Place Jules Ferry, 81990 Le Séquestre<br>Cuisine japonaise & chinoise · Tous nos plats sont faits maison · Tél : <a href="tel:0785491478" style="color:var(--star);text-decoration:none;font-weight:700;">07 85 49 14 78</a></div>
   <div class="f-links">
     <a href="tel:0785491478">Contact</a>
     <a href="#menus">Carte</a>
